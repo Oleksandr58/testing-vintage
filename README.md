@@ -1,1 +1,1 @@
-[testing-vintage](https://oleksandr58.github.io/testing-vintage)
+[testing-vintage](https://oleksandr58.github.io/testing-vintage/app/index.html)
