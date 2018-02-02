@@ -1,12 +1,12 @@
 var				gulp    	= require('gulp'),
-				scss        = require('gulp-sass'),
+				sass        = require('gulp-sass'),
 				browserSync = require('browser-sync'),
 				autoprefixer= require('gulp-autoprefixer');
 
 				
-gulp.task('scss', function() {
-	return gulp.src('app/scss/main.scss')
-	.pipe(scss().on( 'error', function( error )
+gulp.task('sass', function() {
+	return gulp.src('app/sass/main.sass')
+	.pipe(sass().on( 'error', function( error )
       {console.log( error );} )
 	)
 	.pipe(autoprefixer(['last 4 versions'], {cascade:true}))
@@ -32,8 +32,8 @@ gulp.task('browser-sync', function(){
 	});
 });
 
-gulp.task('watch', ['browser-sync', 'scss', 'reload'], function() {
-	gulp.watch('app/scss/**/*.scss', ['scss']);
+gulp.task('watch', ['browser-sync', 'sass', 'reload'], function() {
+	gulp.watch('app/sass/**/*.sass', ['sass']);
 	gulp.watch([
 		'app/index.html',
 		'app/js/**/*.js'
