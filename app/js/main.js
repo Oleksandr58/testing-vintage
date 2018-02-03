@@ -172,6 +172,15 @@ window.onload = function () {
         ctx.fillStyle = '#474747';
         ctx.fill();
 
+        ctx.beginPath();
+            ctx.moveTo(262, 280);
+            ctx.lineTo(262, 303);            
+            ctx.lineTo(276, 293);
+            ctx.fillStyle = 'white';
+            ctx.fill();
+            ctx.closePath();
+        ctx.fill();
+
         DrawStrokeFigure(6, 0.23, 0);
         DrawStrokeFigure(4, 0.7, 0);
         DrawStrokeFigure(2, 2, 0);
